@@ -1,0 +1,62 @@
+---
+description: WCAG 2.1 AA accessibility guidelines for HTML authoring
+globs: "*.html"
+alwaysApply: true
+---
+
+# Accessibility — WCAG 2.1 Level AA
+
+Apply these rules when writing or modifying any HTML in this project.
+
+## Document-level
+
+- Always set `lang` attribute on `<html>` (e.g. `lang="en"`).
+- Include a skip navigation link as the first focusable element in `<body>`:
+  `<a href="#main" class="skip-link">Skip to main content</a>`
+
+## Landmarks
+
+- Use semantic landmark elements: `<header>`, `<nav>`, `<main>`, `<footer>`, `<aside>`, `<section>`.
+- Do NOT add redundant ARIA roles to native landmarks (e.g. no `role="navigation"` on `<nav>`).
+- If multiple `<nav>` or `<section>` elements exist, give each a unique `aria-label`.
+
+## Headings
+
+- Exactly one `<h1>` per page.
+- Never skip heading levels (e.g. `<h2>` followed by `<h4>`).
+- Every `<section>` should begin with a heading.
+
+## Images
+
+- All `<img>` elements must have an `alt` attribute.
+- Decorative images use `alt=""`.
+- Informative images have concise, descriptive alt text (no "image of" or "picture of" prefixes).
+
+## Links and buttons
+
+- Use `<a>` for navigation, `<button>` for actions. Never use `<div>` or `<span>` as interactive elements.
+- Link and button text must be descriptive. Avoid "click here", "read more", "learn more" without context.
+- If the visible text is insufficient, use `aria-label` or `aria-labelledby`.
+- Links opening in a new window should indicate this (e.g. via visually hidden text or `aria-label`).
+
+## Forms
+
+- Every form input must have an associated `<label>` element (via `for`/`id` pairing or wrapping).
+- Use `<fieldset>` and `<legend>` for groups of related inputs.
+- Provide visible error messages associated with inputs via `aria-describedby`.
+
+## Color and contrast
+
+- Text contrast ratio: at least 4.5:1 for normal text, 3:1 for large text (18px+ bold or 24px+).
+- Never convey information through color alone.
+
+## Keyboard
+
+- All interactive elements must be keyboard-accessible.
+- Never use `tabindex` values greater than 0.
+- Ensure a logical focus order that matches the visual layout.
+
+## Media
+
+- Provide text alternatives for non-text content.
+- Video/audio must have captions or transcripts.
