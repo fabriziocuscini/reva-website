@@ -4,7 +4,7 @@
 
 - **Vite** — dev server and production build
 - **PostHTML Components** (`posthtml-component`) — HTML component system with `x-` tag prefix, props, slots, and yield
-- **PostCSS** with `postcss-nested` — nested CSS syntax
+- **PostCSS** with `postcss-nested` + `postcss-custom-media` — nested CSS syntax and build-time custom media queries
 - **Biome** — linter and formatter for JS and CSS
 - **Package manager**: bun (fallback to pnpm if compatibility issues arise)
 
@@ -20,7 +20,7 @@ src/
       colors.css        → Color design tokens
       typography.css    → Font family, size, weight, line-height, letter-spacing tokens
       spacing.css       → Spacing design tokens
-      breakpoints.css   → Responsive breakpoint tokens (sm, md, lg, xl, 2xl)
+      breakpoints.css   → @custom-media breakpoint definitions (--screen-sm through --screen-2xl)
     globals/
       reset.css         → Andy Bell's "(more) Modern CSS Reset"
       base.css          → Token imports, focus, links, a11y utilities, reduced-motion
