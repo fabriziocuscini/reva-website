@@ -1,2 +1,11 @@
 .site-header {
+  &__container {
+    padding: var(--spacing-container-sm);
+    @media (--screen-lg) {
+      padding: var(--spacing-container-lg);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
