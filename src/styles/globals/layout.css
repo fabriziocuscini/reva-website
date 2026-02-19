@@ -1,6 +1,6 @@
-.container {
+.layout-container {
   width: 100%;
-  max-width: 72rem;
+  max-width: 90rem;
   margin-inline: auto;
   padding-inline: var(--spacing-unit-8);
 }
@@ -8,22 +8,26 @@
 .vstack {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-stack-default);
 }
 
-.vstack--xs {
-  gap: var(--spacing-unit-1);
+.vstack--tight {
+  gap: var(--spacing-stack-tight);
 }
-.vstack--sm {
-  gap: var(--spacing-unit-2);
+.vstack--compact {
+  gap: var(--spacing-stack-compact);
 }
-.vstack--md {
-  gap: var(--spacing-unit-4);
+.vstack--default {
+  gap: var(--spacing-stack-default);
 }
-.vstack--lg {
-  gap: var(--spacing-unit-8);
+.vstack--loose {
+  gap: var(--spacing-stack-loose);
 }
-.vstack--xl {
-  gap: var(--spacing-unit-16);
+.vstack--wide {
+  gap: var(--spacing-stack-wide);
+}
+.vstack--spacious {
+  gap: var(--spacing-stack-spacious);
 }
 .vstack--center {
   align-items: center;
@@ -35,22 +39,26 @@
 .hstack {
   display: flex;
   flex-direction: row;
+  gap: var(--spacing-stack-default);
 }
 
-.hstack--xs {
-  gap: var(--spacing-unit-1);
+.hstack--tight {
+  gap: var(--spacing-stack-tight);
 }
-.hstack--sm {
-  gap: var(--spacing-unit-2);
+.hstack--compact {
+  gap: var(--spacing-stack-compact);
 }
-.hstack--md {
-  gap: var(--spacing-unit-4);
+.hstack--default {
+  gap: var(--spacing-stack-default);
 }
-.hstack--lg {
-  gap: var(--spacing-unit-8);
+.hstack--loose {
+  gap: var(--spacing-stack-loose);
 }
-.hstack--xl {
-  gap: var(--spacing-unit-16);
+.hstack--wide {
+  gap: var(--spacing-stack-wide);
+}
+.hstack--spacious {
+  gap: var(--spacing-stack-spacious);
 }
 .hstack--center {
   align-items: center;
