@@ -3,7 +3,7 @@
   --color-bg: var(--color-brand-porcelain);
   --color-primary: var(--color-brand-amber);
   --color-primary-hover: #003ecb;
-  --color-focus: #0057ff;
+  --color-focus: var(--color-brand-gold);
 
   /* --- text --- */
   --color-text: var(--color-black-a90);

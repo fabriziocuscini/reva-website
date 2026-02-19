@@ -18,6 +18,10 @@ a {
   outline-offset: 2px;
 }
 
+::selection {
+  background-color: var(--color-brand-gold-a30);
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
