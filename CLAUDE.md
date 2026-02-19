@@ -13,7 +13,9 @@
 ```
 index.html              → Main page (Vite entry point, at project root)
 src/
-  components/*.html     → PostHTML components (referenced via x-tags)
+  components/
+    ui/                 → Reusable UI components (button, etc.) — <x-ui.button />
+    section/            → Page partials (header, hero, footer) — <x-section.hero />
   styles/
     main.css            → Entry CSS (imports globals, components, sections)
     tokens/
@@ -39,12 +41,13 @@ public/                 → Static assets (favicon, images)
 
 ## PostHTML Component Conventions
 
-- Components live in `src/components/` and are referenced via the `x-` prefix tag.
-  Example: `src/components/hero.html` → `<x-hero />` or `<x-hero title="Hello">content</x-hero>`.
+- Components live in `src/components/` under two groups:
+  - **`ui/`** — reusable UI components (button, link, etc.) → `<x-ui.button />`
+  - **`section/`** — page partials (header, hero, footer) → `<x-section.hero />`
 - Subfolder components use dot notation: `src/components/ui/button.html` → `<x-ui.button />`.
 - Props are defined in a `<script props>` block inside the component file.
 - Default content injection uses `<yield />`. Named slots use `<slot:name>` / `<fill:name>`.
-- Self-closing tags are supported (`<x-header />`).
+- Self-closing tags are supported (`<x-section.header />`).
 
 ## CSS Conventions
 
