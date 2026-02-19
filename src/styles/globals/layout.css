@@ -2,9 +2,9 @@
   width: 100%;
   max-width: 90rem;
   margin-inline: auto;
-  padding-inline: var(--spacing-unit-4);
+  padding-inline: var(--spacing-container-sm);
   @media (--screen-lg) {
-    padding-inline: var(--spacing-unit-8);
+    padding-inline: var(--spacing-container-lg);
   }
 }
 

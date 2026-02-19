@@ -34,4 +34,10 @@
   --spacing-section-loose: var(--spacing-unit-40); /* 160px */
   --spacing-section-wide: var(--spacing-unit-50); /* 200px */
   --spacing-section-spacious: var(--spacing-unit-60); /* 240px */
+
+  /* --- container spacing --- */
+  --spacing-container-xs: var(--spacing-unit-2); /* 8px */
+  --spacing-container-sm: var(--spacing-unit-4); /* 16px */
+  --spacing-container-md: var(--spacing-unit-6); /* 24px */
+  --spacing-container-lg: var(--spacing-unit-8); /* 32px */
 }
