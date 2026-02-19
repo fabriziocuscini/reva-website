@@ -27,8 +27,9 @@ src/
       base.css          → Token imports, focus, links, a11y utilities, reduced-motion
       typography.css    → Element-level text styles (h1-h6, p, small, body)
       layout.css        → Layout primitives (container, vstack, hstack)
+      utils.css         → Utility classes (self-auto, self-start, self-end, self-center, self-stretch)
     components/
-      button.css        → Button component styles (primary, secondary, ghost × sm, md, lg)
+      button.css        → Button component styles (primary × sm, md, lg)
     sections/
       header.css        → Site header
       hero.css          → Hero section

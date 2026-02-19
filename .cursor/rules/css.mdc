@@ -66,6 +66,7 @@ Apply these rules when writing or modifying any CSS in this project.
 - CSS reset lives in `globals/reset.css` (Andy Bell's "(more) Modern CSS Reset"). Do not add reset rules elsewhere.
 - Element-level typography styles live in `globals/typography.css`.
 - Layout primitives (`.container`, `.vstack`, `.hstack`) live in `globals/layout.css`. Use BEM modifiers for gap sizes (`--xs` to `--xl`) and alignment (`--center`, `--stretch`).
+- Utility classes (`.self-auto`, `.self-start`, `.self-end`, `.self-center`, `.self-stretch`) live in `globals/utils.css`. Add more Tailwind-style utilities here as needed.
 - Reusable UI component styles (button, link, menu) live in `components/`. Import order in `main.css`: globals → components → sections.
 - Page-level partials live in `sections/`.
 - Use `@custom-media` names (e.g. `@media (--screen-md)`) for breakpoints in media queries. These are compiled at build time by `postcss-custom-media`. Do not use `var()` in media query conditions — it doesn't work at runtime.
