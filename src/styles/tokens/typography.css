@@ -1,9 +1,9 @@
 :root {
   --font-body:
-    "Inter Tight", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+    'Inter Tight', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-mono:
-    "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    'Geist Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   /* --- font sizes --- */
   --font-size-xs: 0.75rem; /* 12px */

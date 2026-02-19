@@ -6,15 +6,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "biome:check": "biome check .",
-    "biome:fix": "biome check --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.2",
     "@malobre/vite-plugin-posthtml": "^0.1.1",
     "postcss-custom-media": "^12.0.0",
     "postcss-nested": "^7.0.2",
     "posthtml-component": "^2.3.0",
+    "prettier": "^3.8.1",
     "vite": "^7.3.1"
   }
 }

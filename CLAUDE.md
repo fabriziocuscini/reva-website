@@ -5,7 +5,7 @@
 - **Vite** — dev server and production build
 - **PostHTML Components** (`posthtml-component`) — HTML component system with `x-` tag prefix, props, slots, and yield
 - **PostCSS** with `postcss-nested` + `postcss-custom-media` — nested CSS syntax and build-time custom media queries
-- **Biome** — linter and formatter for JS and CSS
+- **Prettier** — code formatter for CSS, HTML, JS, JSON, and Markdown
 - **Package manager**: bun (fallback to pnpm if compatibility issues arise)
 
 ## File Structure
@@ -71,6 +71,6 @@ public/                 → Static assets (favicon, images)
 bun run dev        # Start Vite dev server
 bun run build      # Production build to dist/
 bun run preview    # Preview production build
-bun run biome:check  # Lint and format check
-bun run biome:fix    # Auto-fix lint and format issues
+bun run format       # Format all files with Prettier
+bun run format:check # Check formatting without writing
 ```

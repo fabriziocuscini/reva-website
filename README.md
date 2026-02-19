@@ -19,13 +19,13 @@ bun run dev
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `bun run dev` | Start Vite dev server |
-| `bun run build` | Production build to `dist/` |
-| `bun run preview` | Preview production build locally |
-| `bun run biome:check` | Run linter and format checks |
-| `bun run biome:fix` | Auto-fix lint and formatting issues |
+| Command               | Description                         |
+| --------------------- | ----------------------------------- |
+| `bun run dev`         | Start Vite dev server               |
+| `bun run build`       | Production build to `dist/`         |
+| `bun run preview`     | Preview production build locally    |
+| `bun run biome:check` | Run linter and format checks        |
+| `bun run biome:fix`   | Auto-fix lint and formatting issues |
 
 ## Project Structure
 
