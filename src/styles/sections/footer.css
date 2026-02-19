@@ -1,0 +1,10 @@
+footer {
+  color: var(--color-text-muted);
+
+  p.footnote {
+    color: inherit;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-loose);
+  }
+}

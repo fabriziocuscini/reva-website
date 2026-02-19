@@ -15,9 +15,22 @@ index.html              → Main page (Vite entry point, at project root)
 src/
   components/*.html     → PostHTML components (referenced via x-tags)
   styles/
-    main.css            → Entry CSS (imports partials)
-    base.css            → Reset, custom properties, typography
-    *.css               → Per-component styles
+    main.css            → Entry CSS (imports globals, components, sections)
+    tokens/
+      colors.css        → Color design tokens
+      typography.css    → Font family, size, weight, line-height, letter-spacing tokens
+      spacing.css       → Spacing design tokens
+      breakpoints.css   → Responsive breakpoint tokens (sm, md, lg, xl, 2xl)
+    globals/
+      reset.css         → Andy Bell's "(more) Modern CSS Reset"
+      base.css          → Token imports, focus, links, a11y utilities, reduced-motion
+      typography.css    → Element-level text styles (h1-h6, p, small, body)
+      layout.css        → Layout primitives (container, vstack, hstack)
+    components/           → Reusable UI component styles (button, link, menu, etc.)
+    sections/
+      header.css        → Site header
+      hero.css          → Hero section
+      footer.css        → Site footer
 public/                 → Static assets (favicon, images)
 ```
 
@@ -34,7 +47,10 @@ public/                 → Static assets (favicon, images)
 
 - Use `postcss-nested` for nesting. Prefix nested selectors with `&`.
 - Use `rem`/`em` for font sizes, never `px` for body text.
-- Define design tokens as CSS custom properties in `base.css`.
+- Use typography token variables (`--font-size-*`, `--font-weight-*`, `--line-height-*`, `--letter-spacing-*`) instead of raw values in all stylesheets.
+- Define design tokens as CSS custom properties in `styles/tokens/` (colors, typography, spacing). Never declare `--*` variables in globals or section CSS files.
+- Foundational element-level styles and layout primitives live in `styles/globals/`. Reusable UI component styles live in `styles/components/`. Page-level partials live in `styles/sections/`.
+- Layout utilities (`.container`, `.vstack`, `.hstack`) use BEM modifiers for spacing (e.g. `.vstack--lg`) and alignment (e.g. `.hstack--center`).
 - Always provide `:focus-visible` styles for interactive elements.
 - Include `prefers-reduced-motion: reduce` to disable animations for users who prefer it.
 

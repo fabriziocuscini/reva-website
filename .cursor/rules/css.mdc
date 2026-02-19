@@ -30,6 +30,7 @@ Apply these rules when writing or modifying any CSS in this project.
 ## Units and sizing
 
 - Use `rem` or `em` for font sizes to support browser zoom (never `px` for body text).
+- Use typography token variables (`--font-size-*`, `--font-weight-*`, `--line-height-*`, `--letter-spacing-*`) instead of raw values wherever possible.
 - Ensure interactive touch targets are at least 24x24 CSS pixels (WCAG 2.1 AA).
 - Content must be readable and functional at 200% browser zoom.
 
@@ -53,6 +54,21 @@ Apply these rules when writing or modifying any CSS in this project.
     border: 0;
   }
   ```
+
+## Design tokens
+
+- All CSS custom properties (`--*`) live in `styles/tokens/`:
+  - `colors.css` — color palette and semantic color tokens
+  - `typography.css` — font family, size, weight, line-height, letter-spacing tokens
+  - `spacing.css` — spacing scale tokens
+  - `breakpoints.css` — responsive breakpoint tokens (sm, md, lg, xl, 2xl)
+- Never declare `--*` variables in `globals/` or `sections/` CSS files.
+- CSS reset lives in `globals/reset.css` (Andy Bell's "(more) Modern CSS Reset"). Do not add reset rules elsewhere.
+- Element-level typography styles live in `globals/typography.css`.
+- Layout primitives (`.container`, `.vstack`, `.hstack`) live in `globals/layout.css`. Use BEM modifiers for gap sizes (`--xs` to `--xl`) and alignment (`--center`, `--stretch`).
+- Reusable UI component styles (button, link, menu) live in `components/`. Import order in `main.css`: globals → components → sections.
+- Page-level partials live in `sections/`.
+- `--breakpoint-*` variables cannot be used inside `@media` queries directly; use raw pixel values for media queries.
 
 ## postcss-nested
 

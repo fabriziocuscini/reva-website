@@ -1,4 +1,7 @@
-@import "./base.css";
-@import "./header.css";
-@import "./hero.css";
-@import "./footer.css";
+@import "./globals/reset.css";
+@import "./globals/base.css";
+@import "./globals/typography.css";
+@import "./globals/layout.css";
+@import "./sections/header.css";
+@import "./sections/hero.css";
+@import "./sections/footer.css";
