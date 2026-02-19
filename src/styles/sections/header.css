@@ -1,5 +1,5 @@
 .site-header {
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--spacing-unit-4) var(--spacing-unit-8);
 
   & nav {
     display: flex;
@@ -18,7 +18,7 @@
 
   & .site-header__nav {
     display: flex;
-    gap: var(--space-md);
+    gap: var(--spacing-unit-4);
     list-style: none;
 
     & a {

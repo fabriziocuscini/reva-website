@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--spacing-unit-16) var(--spacing-unit-8);
   min-height: 60vh;
 
   & .hero__title {
@@ -15,7 +15,7 @@
   }
 
   & .hero__subtitle {
-    margin-top: var(--space-md);
+    margin-top: var(--spacing-unit-4);
     font-size: clamp(1.1rem, 2vw, 1.35rem);
     color: var(--color-text-muted);
     max-width: 38rem;

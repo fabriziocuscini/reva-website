@@ -20,9 +20,9 @@ a {
 .skip-link {
   position: absolute;
   top: -100%;
-  left: var(--space-md);
+  left: var(--spacing-unit-4);
   z-index: 1000;
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--spacing-unit-2) var(--spacing-unit-4);
   background: var(--color-primary);
   color: #ffffff;
   text-decoration: none;
