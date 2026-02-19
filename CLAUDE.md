@@ -21,6 +21,7 @@ src/
       typography.css    → Font family, size, weight, line-height, letter-spacing tokens
       spacing.css       → Spacing design tokens
       breakpoints.css   → @custom-media breakpoint definitions (--screen-sm through --screen-2xl)
+      radius.css        → Border-radius design tokens (--radius-xs through --radius-4xl, --radius-full, --radius-square)
     globals/
       reset.css         → Andy Bell's "(more) Modern CSS Reset"
       base.css          → Token imports, focus, links, a11y utilities, reduced-motion

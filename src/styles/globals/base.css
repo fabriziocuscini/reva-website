@@ -2,6 +2,7 @@
 @import '../tokens/typography.css';
 @import '../tokens/spacing.css';
 @import '../tokens/breakpoints.css';
+@import '../tokens/radius.css';
 
 a {
   color: var(--color-primary);
