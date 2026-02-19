@@ -10,10 +10,13 @@ body {
 
 h1 {
   font-family: var(--font-heading);
-  font-size: var(--font-size-6xl);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-dense);
+  font-size: var(--font-size-4xl);
+  @media (--screen-lg) {
+    font-size: var(--font-size-6xl);
+  }
 }
 
 h2 {
@@ -61,6 +64,16 @@ p {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
   letter-spacing: var(--letter-spacing-wide);
+}
+
+p.lead {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  font-size: var(--font-size-xl);
+  @media (--screen-lg) {
+    font-size: var(--font-size-2xl);
+  }
 }
 
 small {
