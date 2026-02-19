@@ -1,9 +1,11 @@
-footer {
-  .vstack {
+.footer {
+  padding-block: var(--spacing-section-compact);
+
+  &__wrapper {
     max-width: 700px;
   }
 
-  p.footnote {
+  &__footnote {
     color: var(--color-text-muted);
     font-size: var(--font-size-xs);
     line-height: var(--line-height-normal);
