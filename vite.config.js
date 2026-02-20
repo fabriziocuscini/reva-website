@@ -1,5 +1,6 @@
 import posthtml from '@malobre/vite-plugin-posthtml';
 import components from 'posthtml-component';
+import FullReload from 'vite-plugin-full-reload';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -15,5 +16,6 @@ export default defineConfig({
         recognizeSelfClosing: true,
       },
     }),
+    FullReload(['index.html', 'src/components/**/*.html']),
   ],
 });
