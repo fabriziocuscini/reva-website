@@ -2,7 +2,7 @@
   /* --- semantic --- */
   --color-bg: var(--color-brand-porcelain);
   --color-primary: var(--color-brand-amber);
-  --color-primary-hover: #003ecb;
+  --color-primary-hover: var(--color-brand-amber-a90);
   --color-focus: var(--color-brand-gold);
 
   /* --- text --- */

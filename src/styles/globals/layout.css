@@ -32,6 +32,9 @@
 .vstack--spacious {
   gap: var(--spacing-stack-spacious);
 }
+.vstack--relaxed {
+  gap: var(--spacing-stack-relaxed);
+}
 .vstack--center {
   align-items: center;
 }
@@ -62,6 +65,9 @@
 }
 .hstack--spacious {
   gap: var(--spacing-stack-spacious);
+}
+.hstack--relaxed {
+  gap: var(--spacing-stack-relaxed);
 }
 .hstack--center {
   align-items: center;

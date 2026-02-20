@@ -25,6 +25,10 @@ h2 {
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-dense);
+  font-size: var(--font-size-3xl);
+  @media (--screen-lg) {
+    font-size: var(--font-size-5xl);
+  }
 }
 
 h3 {
