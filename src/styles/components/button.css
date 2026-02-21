@@ -40,20 +40,20 @@
 .button--sm {
   min-height: var(--button-size-sm);
   font-size: var(--font-size-xs);
-  padding-inline: var(--spacing-unit-2);
+  padding-inline: var(--spacing-2);
   border-radius: var(--radius-sm);
 }
 
 .button--md {
   min-height: var(--button-size-md);
   font-size: var(--font-size-sm);
-  padding-inline: var(--spacing-unit-4);
+  padding-inline: var(--spacing-4);
   border-radius: var(--radius-md);
 }
 
 .button--lg {
   min-height: var(--button-size-lg);
   font-size: var(--font-size-md);
-  padding-inline: var(--spacing-unit-6);
+  padding-inline: var(--spacing-6);
   border-radius: var(--radius-lg);
 }

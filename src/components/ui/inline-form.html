@@ -1,0 +1,23 @@
+<script props>
+  module.exports = {
+    placeholder: props.placeholder || 'Your email address',
+  }
+</script>
+
+<form class="inline-form" action="#" method="post">
+  <label for="inline-form-email" class="sr-only">Email address</label>
+  <input
+    id="inline-form-email"
+    class="inline-form__input"
+    type="email"
+    name="email"
+    placeholder="{{ placeholder }}"
+    required
+    autocomplete="email"
+  />
+  <button class="inline-form__submit" type="submit" aria-label="Submit email">
+    <svg class="inline-form__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true">
+      <path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path>
+    </svg>
+  </button>
+</form>

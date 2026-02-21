@@ -1,43 +1,21 @@
 :root {
-  /* --- spacing units (1 unit = 4px) --- */
-  --spacing-unit-half: 0.125rem; /* 2px */
-  --spacing-unit-1: 0.25rem; /* 4px */
-  --spacing-unit-2: 0.5rem; /* 8px */
-  --spacing-unit-3: 0.75rem; /* 12px */
-  --spacing-unit-4: 1rem; /* 16px */
-  --spacing-unit-5: 1.25rem; /* 20px */
-  --spacing-unit-6: 1.5rem; /* 24px */
-  --spacing-unit-8: 2rem; /* 32px */
-  --spacing-unit-10: 2.5rem; /* 40px */
-  --spacing-unit-12: 3rem; /* 48px */
-  --spacing-unit-16: 4rem; /* 64px */
-  --spacing-unit-20: 5rem; /* 80px */
-  --spacing-unit-24: 6rem; /* 96px */
-  --spacing-unit-30: 7.5rem; /* 120px */
-  --spacing-unit-32: 8rem; /* 128px */
-  --spacing-unit-40: 10rem; /* 160px */
-  --spacing-unit-50: 12.5rem; /* 200px */
-  --spacing-unit-60: 15rem; /* 240px */
-
-  /* --- stack gap --- */
-  --spacing-stack-tight: var(--spacing-unit-2); /* 8px */
-  --spacing-stack-compact: var(--spacing-unit-3); /* 12px */
-  --spacing-stack-default: var(--spacing-unit-4); /* 16px */
-  --spacing-stack-loose: var(--spacing-unit-6); /* 24px */
-  --spacing-stack-wide: var(--spacing-unit-8); /* 32px */
-  --spacing-stack-spacious: var(--spacing-unit-10); /* 40px */
-  --spacing-stack-relaxed: var(--spacing-unit-20); /* 80px */
-
-  /* --- section spacing --- */
-  --spacing-section-compact: var(--spacing-unit-20); /* 80px */
-  --spacing-section-default: var(--spacing-unit-30); /* 120px */
-  --spacing-section-loose: var(--spacing-unit-40); /* 160px */
-  --spacing-section-wide: var(--spacing-unit-50); /* 200px */
-  --spacing-section-spacious: var(--spacing-unit-60); /* 240px */
-
-  /* --- container spacing --- */
-  --spacing-container-xs: var(--spacing-unit-2); /* 8px */
-  --spacing-container-sm: var(--spacing-unit-4); /* 16px */
-  --spacing-container-md: var(--spacing-unit-6); /* 24px */
-  --spacing-container-lg: var(--spacing-unit-8); /* 32px */
+  /* --- spacing scale (1 unit = 4px) --- */
+  --spacing-half: 0.125rem; /* 2px */
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.75rem; /* 12px */
+  --spacing-4: 1rem; /* 16px */
+  --spacing-5: 1.25rem; /* 20px */
+  --spacing-6: 1.5rem; /* 24px */
+  --spacing-8: 2rem; /* 32px */
+  --spacing-10: 2.5rem; /* 40px */
+  --spacing-12: 3rem; /* 48px */
+  --spacing-16: 4rem; /* 64px */
+  --spacing-20: 5rem; /* 80px */
+  --spacing-24: 6rem; /* 96px */
+  --spacing-30: 7.5rem; /* 120px */
+  --spacing-32: 8rem; /* 128px */
+  --spacing-40: 10rem; /* 160px */
+  --spacing-50: 12.5rem; /* 200px */
+  --spacing-60: 15rem; /* 240px */
 }

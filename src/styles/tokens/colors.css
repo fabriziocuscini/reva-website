@@ -8,7 +8,7 @@
   /* --- text --- */
   --color-text: var(--color-black-a90);
   --color-text-muted: var(--color-black-a50);
-  --color-text-placeholder: var(--color-black-a25);
+  --color-text-placeholder: var(--color-black-a35);
   --color-text-inverted-default: var(--color-white-solid);
   --color-text-inverted-muted: var(--color-white-a70);
 
@@ -20,6 +20,7 @@
   --color-brand-gold: #e2a336;
   --color-brand-amber: #ab6400;
   --color-brand-burgundy: #460815;
+  --color-brand-coffee-bean: #180207;
   --color-brand-olive: #8a7d42;
   --color-brand-deep-teal: #195257;
   --color-brand-eggshell: #ede9d9;

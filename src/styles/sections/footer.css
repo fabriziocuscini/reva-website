@@ -1,6 +1,9 @@
 .footer {
-  padding-block: var(--spacing-section-compact);
+  padding: var(--spacing-40) 0 var(--spacing-20) 0;
 
+  @media (--screen-lg) {
+    padding-top: var(--spacing-60);
+  }
   &__wrapper {
     max-width: 700px;
   }

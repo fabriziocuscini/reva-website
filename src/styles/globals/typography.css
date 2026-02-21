@@ -3,9 +3,7 @@ body {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-wide);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  letter-spacing: var(--letter-spacing-normal);
 }
 
 h1 {
@@ -34,7 +32,7 @@ h2 {
 h3 {
   font-family: var(--font-heading);
   font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-compact);
   letter-spacing: var(--letter-spacing-dense);
 }
@@ -80,11 +78,20 @@ p.lead {
   }
 }
 
+.overline {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-spacious);
+  line-height: 16px;
+}
+
 small {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-spacious);
+  letter-spacing: var(--letter-spacing-loose);
 }
 
 code {

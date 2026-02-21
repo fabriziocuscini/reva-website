@@ -6,19 +6,40 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: var(--radius-section-card-lg);
-    box-shadow: 0 0 0 1px var(--color-brand-olive-a50);
-    padding: var(--spacing-unit-10);
+    padding: var(--spacing-10);
+
+    & > .vstack--relaxed {
+      gap: var(--spacing-10);
+
+      @media (--screen-sm) {
+        gap: var(--spacing-20);
+      }
+    }
     @media (--screen-md) {
-      padding: var(--spacing-unit-20) var(--spacing-unit-10);
+      padding: var(--spacing-20) var(--spacing-10);
     }
     @media (--screen-lg) {
       height: 800px;
-      padding: var(--spacing-unit-30) var(--spacing-unit-20);
+      padding: var(--spacing-30) var(--spacing-20);
     }
   }
   &__title {
     color: var(--color-text-inverted-default);
-    font-weight: var(--font-weight-regular);
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-semibold);
+
+    @media (--screen-sm) {
+      font-size: var(--font-size-4xl);
+    }
+
+    @media (--screen-lg) {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-5xl);
+      font-weight: var(--font-weight-regular);
+    }
+  }
+  &__title--dimmed {
+    opacity: 0.6;
   }
   p.lead {
     color: var(--color-text-inverted-muted);
@@ -26,8 +47,8 @@
   &__symbol {
     position: absolute;
     display: none;
-    bottom: var(--spacing-unit-30);
-    right: var(--spacing-unit-30);
+    bottom: var(--spacing-30);
+    right: var(--spacing-30);
     width: 240px;
     height: 240px;
     @media (--screen-xl) {

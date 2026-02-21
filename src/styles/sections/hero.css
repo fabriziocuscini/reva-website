@@ -1,5 +1,11 @@
 .hero {
-  padding-block: var(--spacing-section-spacious);
+  padding-block: var(--spacing-30);
+  @media (--screen-md) {
+    padding-block: var(--spacing-40);
+  }
+  @media (--screen-lg) {
+    padding-block: var(--spacing-60);
+  }
 
   &__wrapper {
     display: flex;

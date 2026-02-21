@@ -3,6 +3,23 @@
 @import '../tokens/spacing.css';
 @import '../tokens/breakpoints.css';
 @import '../tokens/radius.css';
+@import '../tokens/shadows.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text);
+  background: linear-gradient(
+      to bottom,
+      var(--color-brand-eggshell),
+      var(--color-brand-porcelain)
+    )
+    no-repeat;
+  background-size: 100% 100vh;
+  background-color: var(--color-bg);
+}
 
 a {
   color: var(--color-primary);
@@ -25,15 +42,15 @@ a {
 .skip-link {
   position: absolute;
   top: -100%;
-  left: var(--spacing-unit-4);
+  left: var(--spacing-4);
   z-index: 1000;
-  padding: var(--spacing-unit-2) var(--spacing-unit-4);
+  padding: var(--spacing-2) var(--spacing-4);
   background: var(--color-primary);
   color: #ffffff;
   text-decoration: none;
   border-radius: 0 0 4px 4px;
 
-  &:focus {
+  &:focus-visible {
     top: 0;
   }
 }
@@ -54,9 +71,9 @@ a {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: 0s !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: 0s !important;
     scroll-behavior: auto !important;
   }
 }
