@@ -1,8 +1,8 @@
 .legal {
-  padding: var(--spacing-16) 0 var(--spacing-40);
+  padding-top: var(--spacing-20);
 
   @media (--screen-lg) {
-    padding: var(--spacing-20) 0 var(--spacing-40);
+    padding-top: var(--spacing-40);
   }
 
   &__content {
@@ -10,18 +10,27 @@
   }
 
   &__content h1 {
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-30);
   }
 
   &__content h2,
   &__content h3 {
     font-family: var(--font-body);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-compact);
+    letter-spacing: 0;
   }
 
   &__content h2 {
+    font-size: var(--font-size-2xl);
     margin-top: var(--spacing-10);
     margin-bottom: var(--spacing-4);
+  }
+
+  &__content h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-3);
   }
 
   &__content p {

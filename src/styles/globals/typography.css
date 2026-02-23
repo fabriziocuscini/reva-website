@@ -87,6 +87,10 @@ p.lead {
   line-height: 16px;
 }
 
+strong {
+  font-weight: var(--font-weight-semibold);
+}
+
 small {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
