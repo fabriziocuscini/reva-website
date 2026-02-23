@@ -1,16 +1,10 @@
-<script props>
-  module.exports = {
-    href: props.href || '',
-  };
-</script>
-
 <header class="site-header">
-  <if condition="href">
-    <a href="{{ href }}">
-      <img src="/reva-logo.svg" alt="Reva — back to homepage" width="95" height="40" />
-    </a>
-  </if>
-  <else>
-    <img src="/reva-logo.svg" alt="Reva" width="95" height="40" />
-  </else>
+  <a href="/">
+    <img
+      src="/reva-logo.svg"
+      alt="Reva — back to homepage"
+      width="95"
+      height="40"
+    />
+  </a>
 </header>
