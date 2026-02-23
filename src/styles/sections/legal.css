@@ -1,0 +1,46 @@
+.legal {
+  padding: var(--spacing-16) 0 var(--spacing-40);
+
+  @media (--screen-lg) {
+    padding: var(--spacing-20) 0 var(--spacing-40);
+  }
+
+  &__content {
+    max-width: 45rem;
+  }
+
+  &__content h1 {
+    margin-bottom: var(--spacing-8);
+  }
+
+  &__content h2,
+  &__content h3 {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__content h2 {
+    margin-top: var(--spacing-10);
+    margin-bottom: var(--spacing-4);
+  }
+
+  &__content p {
+    margin-bottom: var(--spacing-4);
+  }
+
+  &__content ol {
+    margin-bottom: var(--spacing-4);
+    padding-left: var(--spacing-6);
+  }
+
+  &__content li {
+    margin-bottom: var(--spacing-2);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-wide);
+  }
+
+  &__content a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

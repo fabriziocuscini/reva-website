@@ -11,6 +11,8 @@
   --color-text-placeholder: var(--color-black-a35);
   --color-text-inverted-default: var(--color-white-solid);
   --color-text-inverted-muted: var(--color-white-a70);
+  --color-text-success: #166534;
+  --color-text-error: #991b1b;
 
   /* --- surface --- */
   --color-surface: var(--color-brand-porcelain);

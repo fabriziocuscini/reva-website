@@ -68,8 +68,36 @@
     }
   }
 
+  &__submit[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
   &__icon {
     width: 1.5rem; /* 24px */
     height: 1.5rem;
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 22.5rem;
+    height: 4rem;
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-text-success);
+    margin: 0;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-wide);
+
+    &--error {
+      color: var(--color-text-error);
+    }
   }
 }
