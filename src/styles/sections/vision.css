@@ -34,6 +34,7 @@
 
     @media (--screen-lg) {
       font-size: var(--font-size-5xl);
+      font-weight: var(--font-weight-medium);
     }
   }
   &__title--dimmed {

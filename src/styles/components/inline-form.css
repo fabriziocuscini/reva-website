@@ -1,3 +1,8 @@
+.inline-form-wrapper {
+  width: 100%;
+  max-width: 22.5rem;
+}
+
 .inline-form {
   display: flex;
   align-items: center;
