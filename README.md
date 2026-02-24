@@ -7,12 +7,14 @@ Marketing website for Reva.
 - **Vite** — dev server and production build
 - **PostHTML Components** — HTML component system (`x-` tag prefix, props, slots)
 - **PostCSS** with `postcss-nested` — nested CSS syntax
-- **Biome** — linter and formatter (JS + CSS)
+- **Prettier** — code formatter
 - **bun** — package manager and script runner
 
 ## Getting Started
 
 ```sh
+git clone git@github.com:fabriziocuscini/reva-website.git
+cd reva-website
 bun install
 bun run dev
 ```
@@ -24,23 +26,28 @@ bun run dev
 | `bun run dev`         | Start Vite dev server               |
 | `bun run build`       | Production build to `dist/`         |
 | `bun run preview`     | Preview production build locally    |
-| `bun run biome:check` | Run linter and format checks        |
-| `bun run biome:fix`   | Auto-fix lint and formatting issues |
+| `bun run format`       | Format all files with Prettier      |
+| `bun run format:check` | Check formatting without writing    |
 
 ## Project Structure
 
 ```
 index.html                  Main page (Vite entry point)
+privacy.html, terms.html    Legal pages
 src/
-  components/*.html         PostHTML components (x-tags)
+  components/
+    ui/                     Reusable UI components (button, inline-form) — <x-ui.button />
+    section/                Page partials (header, hero, footer, etc.) — <x-section.hero />
   styles/
-    main.css                Entry CSS (imports partials)
-    base.css                Reset, custom properties, typography
-    *.css                   Per-component styles
-public/                     Static assets
+    main.css                Entry CSS (imports globals, components, sections)
+    tokens/                 Design tokens (colors, typography, spacing, breakpoints, radius, shadows)
+    globals/                Reset, base, typography, layout, utils
+    components/             UI component styles (button, inline-form)
+    sections/               Section styles (header, hero, footer, etc.)
+public/                     Static assets (favicon, icons, images)
 vite.config.js              Vite + PostHTML plugin config
-postcss.config.js           PostCSS plugins
-biome.json                  Biome linter/formatter config
+postcss.config.js           PostCSS plugins (nested, custom-media)
+.prettierrc                 Prettier formatter config
 ```
 
 ## Accessibility
