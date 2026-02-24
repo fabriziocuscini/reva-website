@@ -33,9 +33,7 @@
     }
 
     @media (--screen-lg) {
-      font-family: var(--font-heading);
       font-size: var(--font-size-5xl);
-      font-weight: var(--font-weight-regular);
     }
   }
   &__title--dimmed {
